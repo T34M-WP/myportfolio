@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* #carouselExampleDark img {
+            height: 500px;
+            /* ปรับความสูงตามที่ต้องการ */
+        /* object-fit: contain; */
+        /* ปรับขนาดภาพให้เต็มพื้นที่ */
+        /* } */
+
+        .my-text {
+            transition: transform 0.3s ease;
+            /* เพิ่มการเปลี่ยนแปลงอย่างนุ่มนวล */
+        }
+
+        .my-text:hover {
+            transform: translateY(-5px);
+            /* เลื่อนข้อความขึ้นข้างบนเมื่อโดนเม้าส์ */
+        }
+
+        .text-animate {
+            visibility: hidden;
+
+        }
+
+        .custom-toggle {
+            font-size: 0.8rem;
+            /* ปรับขนาด font-size ให้เล็กลง */
+            padding: 0.25rem 0.5rem;
+            /* ปรับ padding ให้มีขนาดเล็กลง */
+        }
+    </style>
+
+    <title>My portforio</title>
+    <script src="https://kit.fontawesome.com/3c00ee0319.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="slide.css">
+
+</head>
+
+<body class="bg-dark">
+
+    <nav id="home" class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid  ">
+            <a class="navbar-brand " href="#home"><i class="fa-solid fa-water"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- <a class="nav-link disabled" aria-current="page" href="#">Home</a> -->
+                    <a class="nav-link" href="#aboutme">About me</a>
+                    <a class="nav-link" href="#certificate">Certificate</a>
+                    <a class="nav-link " href="#myproject">My project</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div  class="container-fluid bg-image align-items-center d-flex pt-5"
+        style="background-image: url('image/ad548eef2b6d4cba36be6ca5a2c8b716.jpg'); height: 100vh; overflow: hidden;">
+
+        <div class="container-fluid d-flex my-5">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="container-fluid  mt-5 text-white text-center p-5">
+
+                        <h1 class=" display-3 fw-bold animate__animated animate__fadeInUp"
+                            style="animation-delay: 0.1s;">HI,I'm Warin</h1>
+                        <p class="lead animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">"I'm a newbie developer, aspiring to master full-stack web development. Actively seeking to improve my skills and open to valuable lessons as they come."</p>
+                        <a href="#aboutme" class="btn btn-outline-light px-5 m-2 animate__animated animate__fadeInUp"
+                            style="animation-delay: 0.5s;">About me</a>
+
+                        <a href="resume.pdf" target="_blank"
+                            class="btn btn-outline-light px-5 m-2 animate__animated animate__fadeInUp"
+                            style="animation-delay: 0.7s;">Resume</a>
+
+                        <a href="#myproject" class="btn btn-outline-light px-5 m-2 animate__animated animate__fadeInUp"
+                            style="animation-delay: 0.9s;">My project</a>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 a">
+                    <div class="container " style="overflow: hidden;">
+
+                        <div class="slideshow-container  ">
+                            <div class="mySlides animate__animated animate__fadeIn  ">
+                                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width: 100%;">
+
+                            </div>
+
+                            <div class="mySlides animate__animated animate__fadeIn  ">
+                                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width: 100%;">
+                            </div>
+
+                            <div class="mySlides animate__animated animate__fadeIn  ">
+                                <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width: 100%;">
+                            </div>
+
+                            <a class="prev" onclick="goonSlides(-1)">❮</a>
+                            <a class="next" onclick="goonSlides(1)">❯</a>
+
+                        </div>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div class="dots" style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
+                        <a id="autoSlideButton" class="autoSlideButton" onclick="toggleFunctions()"><i
+                                class="fa-solid fa-pause"></i></a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="row">
+            <div class="col-xl-6 col-md-6 col-sm-6 col-xs-8">
+                <div class="container text-white text-center ">
+                    <div class="container my-5">
+                        <h1 class="display-1 animate__animated animate__fadeInUp">HI, I'm Warin</h1>
+                        <p class="lead animate__animated animate__fadeInUp">"Neque porro quisquam est qui dolorem
+                            ipsum quia dolor sit amet, consectetur,
+                            adipisci
+                            velit..."</p>
+                    </div>
+                    <div class="container my-5">
+                        <button type="button"
+                            class="btn btn-outline-light btn-lg py-2 mx-2 animate__animated animate__fadeInUp"
+                            style="animation-delay: 0.1s;">About me</button>
+                        <button type="button"
+                            class="btn btn-outline-light btn-lg py-2 mx-2 animate__animated animate__fadeInUp"
+                            style="animation-delay: 0.2s;">Resume</button>
+                        <button type="button"
+                            class="btn btn-outline-light btn-lg py-2 mx-2 animate__animated animate__fadeInUp"
+                            style="animation-delay: 0.3s;">My project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="container d-flex align-items-center justify-content-center"
+                    style="width: 500px; height: 300px; overflow: hidden;">
+                    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image/a39625b1721b65d2f94b89f73a588017.jpg" class="d-block w-100"
+                                    alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/1179d489361b71a20da898b26ad000a5.jpg" class="d-block w-100"
+                                    alt="Slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/10a2f0c4221be23c238934528bab97e8.jpg" class="d-block w-100"
+                                    alt="Slide 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+        <!-- <div class="col-xl-6 col-md-6 col-sm-6 col-xs-8 ">
+
+
+                <div class="container align-items-center justify-content-center  mx-5 " style="width: 500px; height: 500px; overflow: hidden;" >
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="image/a39625b1721b65d2f94b89f73a588017.jpg" class="d-block w-100 img-fluid "
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="image/1179d489361b71a20da898b26ad000a5.jpg" class="d-block w-100 img-fluid"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/10a2f0c4221be23c238934528bab97e8.jpg" class="d-block w-100 img-fluid"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block text-white">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+    </div>
+
+    <div class="container-fluid d-flex my-5" id="aboutme">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container-fluid p-5 text-center ">
+                    <img src="image/e2905b5ee4215249f6b5c3b8ad650210.jpg"
+                        class="img-fluid shadow mb-5 bg-body-tertiary rounded text-animate" alt="...">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container-fluid text-white my-5 fade-in">
+                    <h3 class="text-animate">Discover</h3>
+                    <p class="text-animate">About me</p>
+                    <p class="text-animate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante ligula,
+                        volutpat sit amet neque sed, pretium venenatis odio. Proin venenatis erat blandit arcu sodales,
+                        at venenatis turpis ultricies. Duis libero mauris, sodales ut ligula sit amet, molestie varius
+                        est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Pellentesque sollicitudin maximus mattis. Nam quam nisi, dignissim ac lacus eget, porta
+                        tristique quam. Proin tempor venenatis auctor. Cras quis ligula lobortis, placerat nunc vitae,
+                        vehicula urna. Ut tincidunt tellus ut eros malesuada, non eleifend ante tempus.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid justify-content-center align-items-center my-5">
+        <div class="container-fluid text-white p-5">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-md-6 col-sm-12 ">
+                    <h1 class="text-center text-animate ">MY SKILL</h1>
+                    <p class="text-center  ">Sed eleifend, nulla a tempor luctus, ante libero
+                        bibendum neque,
+                        ac rhoncus
+                        velit magna ac nisl. Integer accumsan urna eget imperdiet fringilla. Fusce non lorem
+                        sit amet
+                        odio rutrum auctor. Sed eget congue dolor. Curabitur id ipsum lobortis, fermentum
+                        elit ac,
+
+                        at eros.</p>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center my-5">
+            <div class="row">
+                <div class="col-6">
+                    <div class="container-fluid  text-white">
+                        <p class="fw-semibold fs-4">Hard Skill</p>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 text-animate">
+
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-brands fa-css3-alt "></i></h1>
+                                <p>Basic CSS</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-brands fa-js "></i></h1>
+                                <p>Basic JS</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-brands fa-html5"></i></h1>
+                                <p>Basic HTML</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-brands fa-python"></i></h1>
+                                <p>Basic Phython</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-solid fa-database"></i></h1>
+                                <p>Basic MySQL</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-solid fa-code"></i></h1>
+                                <p>Basic C++</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-solid fa-code"></i></h1>
+                                <p>Basic C#</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-regular fa-pen-to-square"></i></h1>
+                                <p>Soon</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="container-fluid text-white  ">
+                        <p class="fw-semibold fs-4">Solf Skill</p>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 text-animate">
+
+
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-solid fa-user-gear"></i></h1>
+                                <p>Adaptability</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-solid fa-graduation-cap"></i></h1>
+                                <p>Life-Long Learning</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-regular fa-lightbulb"></i></h1>
+                                <p>Critical Thinking</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-regular fa-handshake"></i></h1>
+                                <p>Collaboration</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-solid fa-hand-fist"></i></h1>
+                                <p>Emotional Intelligence</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-solid fa-comments"></i></h1>
+                                <p>Communication</p>
+                            </div>
+                            <div class="col my-text fade-in my-3">
+                                <h1><i class="fa-solid fa-briefcase"></i></h1>
+                                <p>Responsibility</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-white my-5">
+
+        <div id="certificate" class="container-fluid text-white text-center">
+            <h3 class="text-animate2">Certificate</h3>
+            <p class="text-animate2">Sed eleifend, nulla a tempor luctus, ante libero
+                bibendum neque,</p>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 text-animate">
+                <div class="col my-5">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/236x/b9/24/01/b92401d7d7851ea4ee59c6aaed11c5c5.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body w-100 m-auto">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-5">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/236x/b9/24/01/b92401d7d7851ea4ee59c6aaed11c5c5.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body w-100 m-auto">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-5">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/236x/b9/24/01/b92401d7d7851ea4ee59c6aaed11c5c5.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body w-100 m-auto">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-5">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/236x/b9/24/01/b92401d7d7851ea4ee59c6aaed11c5c5.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body w-100 m-auto">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+
+
+
+    <div id="myproject" class="container-fluid my-5 ">
+
+
+        <div class="container-fluid text-center text-animate2 text-white">
+            <h2>What is project i do?</h2>
+        </div>
+
+
+
+        <div class="container d-flex align-items-center justify-content-center my-5 ">
+            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner shadow   ">
+                    <div class="carousel-item active">
+                        <img src="https://www.w3schools.com/howto/img_band_chicago.jpg" class="d-block w-100"
+                            alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.w3schools.com/howto/img_band_la.jpg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.w3schools.com/howto/img_band_ny.jpg" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <nav class="navbar sticky-bottom">
+        <div class="container-fluid mb-3  d-flex justify-content-end">
+            
+            <a class="btn btn-outline-light" href="#home"><i class="fa-solid fa-water"></i></a>
+
+            
+
+            
+
+
+        </div>
+    </nav>
+
+
+
+
+
+
+    <div style="height: 0px;"></div> <!-- Add some space to enable scrolling -->
+
+    <script src="slide.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
