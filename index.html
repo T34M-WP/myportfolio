@@ -58,14 +58,20 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav justify-content-space-between align-items-center"> <!-- เพิ่มคลาส align-items-center เพื่อจัดให้ระยะห่างเท่ากัน -->
                     <!-- <a class="nav-link disabled" aria-current="page" href="#">Home</a> -->
-                    <a class="nav-link" href="#aboutme">About me</a>
+                    <a class="nav-link " href="#aboutme" style="white-space: nowrap;">About me</a>
                     <a class="nav-link" href="#certificate">Certificate</a>
-                    <a class="nav-link " href="#myproject">My project</a>
-
+                    <a class="nav-link" href="#myproject" style="white-space: nowrap;">My project</a>
                 </div>
+                <div class="container-fluid d-flex justify-content-end align-items-center"> <!-- เพิ่มคลาส align-items-center เพื่อจัดให้ระยะห่างเท่ากัน -->
+                    <a class="m-2" href="https://github.com/T34M-WP" target="_blank"><i class="fa-brands fa-square-github text-white "></i></a>
+                    <a class="m-2" href="https://www.facebook.com/TOREEMORE" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a>
+                    <a class="m-2" href="https://www.instagram.com/t34m.wp" target="_blank"><i class="fa-brands fa-instagram text-white"></i></a>
+                </div>
+            </div>
+            
             </div>
         </div>
     </nav>
@@ -445,8 +451,8 @@
 
                     <!-- Image Card 2 -->
                     <div class="card mx-auto" style="width: 18rem;">
-                        <img src="image/borntodev-acdemy_Introduction to JavaScript_certifiacte.png" class="card-img-top"
-                            alt="Certificate 2" data-toggle="modal" data-target="#imageModal2">
+                        <img src="image/borntodev-acdemy_Introduction to JavaScript_certifiacte.png"
+                            class="card-img-top" alt="Certificate 2" data-toggle="modal" data-target="#imageModal2">
                         <div class="card-body w-100 m-auto">
                             <p class="card-text">JavaScript</p>
                         </div>
@@ -455,8 +461,8 @@
                 <div class="col my-5">
                     <!-- Image Card 3 -->
                     <div class="card mx-auto" style="width: 18rem;">
-                        <img src="image/borntodev-acdemy_Fundamental Web Dev with HTML5 & CSS3_certifiacte.png" class="card-img-top"
-                            alt="Certificate 3" data-toggle="modal" data-target="#imageModal3">
+                        <img src="image/borntodev-acdemy_Fundamental Web Dev with HTML5 & CSS3_certifiacte.png"
+                            class="card-img-top" alt="Certificate 3" data-toggle="modal" data-target="#imageModal3">
                         <div class="card-body w-100 m-auto">
                             <p class="card-text">Web Dev with HTML5 & CSS3</p>
                         </div>
@@ -502,7 +508,8 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="image/borntodev-acdemy_Introduction to JavaScript_certifiacte.png" class="img-fluid" alt="Certificate 2">
+                    <img src="image/borntodev-acdemy_Introduction to JavaScript_certifiacte.png" class="img-fluid"
+                        alt="Certificate 2">
                 </div>
             </div>
         </div>
@@ -517,7 +524,8 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="image/borntodev-acdemy_Fundamental Web Dev with HTML5 & CSS3_certifiacte.png" class="img-fluid" alt="Certificate 3">
+                    <img src="image/borntodev-acdemy_Fundamental Web Dev with HTML5 & CSS3_certifiacte.png"
+                        class="img-fluid" alt="Certificate 3">
                 </div>
             </div>
         </div>
@@ -551,42 +559,34 @@
 
         <div class="container d-flex align-items-center justify-content-center my-5 ">
             <div id="carouselExample" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner shadow   ">
+                <div class="carousel-inner shadow">
                     <div class="carousel-item active">
-                        <a href="https://www.canva.com/design/DAFOWJsXtic/ZzZEkpQdQw3BWaEhEJ1H0w/view?utm_content=DAFOWJsXtic&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                            target="_blank">
-                            <img src="image/PJ1.png" class="d-block w-100" alt="Slide 1"
-                                style="width: 600px; height: 500px;">
+                        <a href="https://www.canva.com/design/DAFOWJsXtic/ZzZEkpQdQw3BWaEhEJ1H0w/view?utm_content=DAFOWJsXtic&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">
+                            <img src="image/PJ1.png" class="d-block w-100" alt="Slide 1" style="max-width: 100%; max-height: 100%;">
                         </a>
                     </div>
-
                     <div class="carousel-item">
-                        <a href="https://www.canva.com/design/DAFzr95ggKg/qr_euPEGHzKghzVi6dnbtg/view?utm_content=DAFzr95ggKg&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-                            target="_blank">
-                            <img src="image/PJ2.PNG" class="d-block w-100" alt="Slide 2"
-                                style="width: 600px; height: 500px;"></a>
+                        <a href="https://www.canva.com/design/DAFzr95ggKg/qr_euPEGHzKghzVi6dnbtg/view?utm_content=DAFzr95ggKg&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
+                            <img src="image/PJ2.PNG" class="d-block w-100" alt="Slide 2" style="max-width: 100%; max-height: 100%;">
+                        </a>
                     </div>
-
-
                     <div class="carousel-item">
-                        <a href="https://www.canva.com/design/DAFzk_zYJig/Q18Utz9rgKMlPgABOH-TiA/view?utm_content=DAFzk_zYJig&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-                            target="_blank">
-                            <img src="image/PJ3.PNG" class="d-block w-100" alt="Slide 2"
-                                style="width: 600px; height: 500px;"></a>
+                        <a href="https://www.canva.com/design/DAFzk_zYJig/Q18Utz9rgKMlPgABOH-TiA/view?utm_content=DAFzk_zYJig&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
+                            <img src="image/PJ3.PNG" class="d-block w-100" alt="Slide 3" style="max-width: 100%; max-height: 100%;">
+                        </a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
+        
 
 
 
