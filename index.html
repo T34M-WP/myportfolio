@@ -4,36 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* #carouselExampleDark img {
-            height: 500px;
-            /* ปรับความสูงตามที่ต้องการ */
-        /* object-fit: contain; */
-        /* ปรับขนาดภาพให้เต็มพื้นที่ */
-        /* } */
-
-        .my-text {
-            transition: transform 0.3s ease;
-            /* เพิ่มการเปลี่ยนแปลงอย่างนุ่มนวล */
-        }
-
-        .my-text:hover {
-            transform: translateY(-5px);
-            /* เลื่อนข้อความขึ้นข้างบนเมื่อโดนเม้าส์ */
-        }
-
-        .text-animate {
-            visibility: hidden;
-
-        }
-
-        .custom-toggle {
-            font-size: 0.8rem;
-            /* ปรับขนาด font-size ให้เล็กลง */
-            padding: 0.25rem 0.5rem;
-            /* ปรับ padding ให้มีขนาดเล็กลง */
-        }
-    </style>
+    
 
     <title>My portfolio</title>
     <script src="https://kit.fontawesome.com/3c00ee0319.js" crossorigin="anonymous"></script>
@@ -45,44 +16,64 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="LightAndDark.css">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
+<body>
 
-    <nav id="home" class="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+    <nav id="home" class="navbar navbar-expand-lg navbar-dark  ">
         <div class="container-fluid  ">
             <a class="navbar-brand " href="#home"><i class="fa-solid fa-water"></i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                <div class="navbar-nav justify-content-space-between align-items-center"> <!-- เพิ่มคลาส align-items-center เพื่อจัดให้ระยะห่างเท่ากัน -->
+                <div class="navbar-nav justify-content-space-between align-items-center">
+                    <!-- เพิ่มคลาส align-items-center เพื่อจัดให้ระยะห่างเท่ากัน -->
                     <!-- <a class="nav-link disabled" aria-current="page" href="#">Home</a> -->
                     <a class="nav-link " href="#aboutme" style="white-space: nowrap;">About me</a>
                     <a class="nav-link" href="#certificate">Certificate</a>
                     <a class="nav-link" href="#myproject" style="white-space: nowrap;">My project</a>
+
                 </div>
-                <div class="container-fluid d-flex justify-content-end align-items-center"> <!-- เพิ่มคลาส align-items-center เพื่อจัดให้ระยะห่างเท่ากัน -->
-                    <a class="m-2" href="https://github.com/T34M-WP" target="_blank"><i class="fa-brands fa-square-github text-white "></i></a>
-                    <a class="m-2" href="https://www.facebook.com/TOREEMORE" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a>
-                    <a class="m-2" href="https://www.instagram.com/t34m.wp" target="_blank"><i class="fa-brands fa-instagram text-white"></i></a>
+                <div class="container-fluid d-flex justify-content-end align-items-center">
+                    <!-- เพิ่มคลาส align-items-center เพื่อจัดให้ระยะห่างเท่ากัน -->
+                    <a class="m-2 " href="https://github.com/T34M-WP" target="_blank"><i
+                            class="fa-brands fa-square-github  logo "></i></a>
+                    <a class="m-2" href="https://www.facebook.com/TOREEMORE" target="_blank"><i
+                            class="fa-brands fa-facebook logo "></i></a>
+                    <a class="m-2" href="https://www.instagram.com/t34m.wp" target="_blank"><i
+                            class="fa-brands fa-instagram logo "></i></a>
+
                 </div>
+
+
+
             </div>
-            
-            </div>
+
+        </div>
         </div>
     </nav>
 
-    <div class="container-fluid bg-image align-items-center d-flex pt-5"
+
+
+    <div class="container-fluid background-imag bg-image align-items-center d-flex pt-5"
         style="background-image: url('image/ad548eef2b6d4cba36be6ca5a2c8b716.jpg'); height: 100vh; overflow: hidden;">
+
+
 
         <div class="container-fluid d-flex my-5">
             <div class="row ">
                 <div class="col-md-6">
-                    <div class="container-fluid  mt-5 text-white text-center p-5">
+                    <div class="container-fluid  mt-5 text-white  text-center p-5">
 
                         <h1 class=" display-3 fw-bold animate__animated animate__fadeInUp"
                             style="animation-delay: 0.1s;">HI,I'm Warin</h1>
@@ -159,7 +150,7 @@
 
         <!-- <div class="row">
             <div class="col-xl-6 col-md-6 col-sm-6 col-xs-8">
-                <div class="container text-white text-center ">
+                <div class="container   text-center ">
                     <div class="container my-5">
                         <h1 class="display-1 animate__animated animate__fadeInUp">HI, I'm Warin</h1>
                         <p class="lead animate__animated animate__fadeInUp">"Neque porro quisquam est qui dolorem
@@ -229,7 +220,7 @@
                             <div class="carousel-item active" data-bs-interval="1000">
                                 <img src="image/a39625b1721b65d2f94b89f73a588017.jpg" class="d-block w-100 img-fluid "
                                     alt="...">
-                                <div class="carousel-caption d-none d-md-block text-white">
+                                <div class="carousel-caption d-none d-md-block  ">
                                     <h5>First slide label</h5>
                                     <p>Some representative placeholder content for the first slide.</p>
                                 </div>
@@ -237,7 +228,7 @@
                             <div class="carousel-item" data-bs-interval="2000">
                                 <img src="image/1179d489361b71a20da898b26ad000a5.jpg" class="d-block w-100 img-fluid"
                                     alt="...">
-                                <div class="carousel-caption d-none d-md-block text-white">
+                                <div class="carousel-caption d-none d-md-block  ">
                                     <h5>Second slide label</h5>
                                     <p>Some representative placeholder content for the second slide.</p>
                                 </div>
@@ -245,7 +236,7 @@
                             <div class="carousel-item">
                                 <img src="image/10a2f0c4221be23c238934528bab97e8.jpg" class="d-block w-100 img-fluid"
                                     alt="...">
-                                <div class="carousel-caption d-none d-md-block text-white">
+                                <div class="carousel-caption d-none d-md-block  ">
                                     <h5>Third slide label</h5>
                                     <p>Some representative placeholder content for the third slide.</p>
                                 </div>
@@ -267,7 +258,7 @@
         <!-- </div> -->
     </div>
 
-    <div class="container-fluid d-flex my-5" id="aboutme">
+    <div class="container-fluid d-flex my-5  shadow" id="aboutme">
         <div class="row">
             <div class="col-md-6">
                 <div class="container-fluid p-5 text-center">
@@ -277,8 +268,8 @@
                 </div>
 
             </div>
-            <div class="col-md-5">
-                <div class="container-fluid text-white my-5 fade-in">
+            <div class="col-md-5 ">
+                <div class="container-fluid   my-5 fade-in">
                     <h3 class="text-animate">Discover</h3>
                     <p class="text-animate">About me</p>
                     <p class="text-animate">"Hello, my name is Warin Prompichai. I'm currently studying at KMITL in the
@@ -287,7 +278,7 @@
                         Initially, I'd like to start with front-end development. If you're interested in getting to know
                         me better, feel free to contact me through the provided channels. I'm ready to work and learn
                         from others."</p>
-                    <div class="container-fluid bg-dark bg-opacity-25 shadow-lg p-5">
+                    <div class="container-fluid  bg-opacity-25 shadow-lg p-5" style="border-radius: 10px;">
                         <div class="row">
                             <div class="col ">
                                 <p>Name : Warin Prompichai <br><br> Phone : 0980615223<br><br> E-mail :
@@ -302,12 +293,12 @@
                         </div>
                         <div class="container-fluid d-flex">
                             <h1><a class="p-3" href="https://github.com/T34M-WP" target="_blank"><i
-                                        class="fa-brands fa-square-github text-white"></i></a></h1>
+                                        class="fa-brands fa-square-github logo "></i></a></h1>
                             <h1><a class="p-3" href="https://www.facebook.com/TOREEMORE" target="_blank"><i
-                                        class="fa-brands fa-facebook text-white"></i></a></h1>
+                                        class="fa-brands fa-facebook logo "></i></a></h1>
 
                             <h1><a class="p-3" href="https://www.instagram.com/t34m.wp" target="_blank"><i
-                                        class="fa-brands fa-instagram text-white"></i></a></h1>
+                                        class="fa-brands fa-instagram logo "></i></a></h1>
 
 
                         </div>
@@ -329,7 +320,7 @@
     </div>
 
     <div class="container-fluid justify-content-center align-items-center my-5">
-        <div class="container-fluid text-white p-5">
+        <div class="container-fluid   p-5">
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-6 col-sm-12 ">
@@ -345,7 +336,7 @@
         <div class="container-fluid text-center my-5">
             <div class="row">
                 <div class="col-6">
-                    <div class="container-fluid  text-white">
+                    <div class="container-fluid   ">
                         <p class="fw-semibold fs-4">Hard Skill</p>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
 
@@ -386,7 +377,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="container-fluid text-white  ">
+                    <div class="container-fluid    ">
                         <p class="fw-semibold fs-4">Solf Skill</p>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
 
@@ -426,9 +417,9 @@
         </div>
     </div>
 
-    <div class="container-fluid text-white my-5">
+    <div class="container-fluid   my-5">
 
-        <div id="certificate" class="container-fluid text-white text-center">
+        <div id="certificate" class="container-fluid   text-center">
             <h3 class="text-animate2">Certificate</h3>
             <p class="text-animate2">"Here is my certificate. I strive to diligently practice and gain experience to
                 develop my abilities."</p>
@@ -551,7 +542,7 @@
     <div id="myproject" class="container-fluid my-5 ">
 
 
-        <div class="container-fluid text-center text-animate2 text-white">
+        <div class="container-fluid text-center text-animate2 ">
             <h2>What is project i do?</h2>
         </div>
 
@@ -561,41 +552,54 @@
             <div id="carouselExample" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner shadow">
                     <div class="carousel-item active">
-                        <a href="https://www.canva.com/design/DAFOWJsXtic/ZzZEkpQdQw3BWaEhEJ1H0w/view?utm_content=DAFOWJsXtic&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">
-                            <img src="image/PJ1.png" class="d-block w-100" alt="Slide 1" style="max-width: 100%; max-height: 100%;">
+                        <a href="https://www.canva.com/design/DAFOWJsXtic/ZzZEkpQdQw3BWaEhEJ1H0w/view?utm_content=DAFOWJsXtic&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                            target="_blank">
+                            <img src="image/PJ1.png" class="d-block w-100" alt="Slide 1"
+                                style="max-width: 100%; max-height: 100%;">
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="https://www.canva.com/design/DAFzr95ggKg/qr_euPEGHzKghzVi6dnbtg/view?utm_content=DAFzr95ggKg&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
-                            <img src="image/PJ2.PNG" class="d-block w-100" alt="Slide 2" style="max-width: 100%; max-height: 100%;">
+                        <a href="https://www.canva.com/design/DAFzr95ggKg/qr_euPEGHzKghzVi6dnbtg/view?utm_content=DAFzr95ggKg&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                            target="_blank">
+                            <img src="image/PJ2.PNG" class="d-block w-100" alt="Slide 2"
+                                style="max-width: 100%; max-height: 100%;">
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="https://www.canva.com/design/DAFzk_zYJig/Q18Utz9rgKMlPgABOH-TiA/view?utm_content=DAFzk_zYJig&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
-                            <img src="image/PJ3.PNG" class="d-block w-100" alt="Slide 3" style="max-width: 100%; max-height: 100%;">
+                        <a href="https://www.canva.com/design/DAFzk_zYJig/Q18Utz9rgKMlPgABOH-TiA/view?utm_content=DAFzk_zYJig&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                            target="_blank">
+                            <img src="image/PJ3.PNG" class="d-block w-100" alt="Slide 3"
+                                style="max-width: 100%; max-height: 100%;">
                         </a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
-        
+
 
 
 
     </div>
 
-    <nav class="navbar sticky-bottom">
+    <nav class="navbar sticky-bottom ">
         <div class="container-fluid mb-3  d-flex justify-content-end">
 
-            <a class="btn btn-outline-light" href="#home"><i class="fa-solid fa-angles-up"></i></a>
+
+            <button id="mode-toggle" class="btn btn-orangered mx-3  flex justify-content-end  "><i
+                    class="fas fa-moon "></i></button>
+            <a href="#home" class="btn btn-orangered   flex justify-content-end  "><i
+                    class="fa-solid fa-angles-up"></i></a>
+            <!-- <a class="btn btn-outline-light" href="#home"><i class="fa-solid fa-angles-up"></i></a> -->
 
 
 
@@ -617,7 +621,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/3c00ee0319.js" crossorigin="anonymous"></script>
 
-
+    <script src="mode.js"></script>
     <script src="slide.js"></script>
     <script src="app.js"></script>
 

@@ -1,0 +1,77 @@
+/* Light Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode .navbar {
+    color: #000000; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+    background-color:#fcf8f8;
+}
+
+body.light-mode .nav-link {
+    color: #ee5142; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+    
+}
+
+body.light-mode .btn-orangered {
+    background-color:#ee5142;
+    
+}
+
+body.light-mode .navbar-brand {
+    color: #ee5142; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+    
+}
+
+
+body.light-mode .text {
+    color: #333333; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+}
+
+body.light-mode .logo {
+    color: #ee5142; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+}
+
+body.light-mode .navbar-toggler {
+    background-color:#ee5142; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #05131a;
+    color: #ffffff;
+}
+
+
+
+body.dark-mode .text {
+    color: #cccccc; /* เปลี่ยนสีตัวหนังสือในโหมดมืด */
+}
+
+body.dark-mode .navbar {
+    color: #cccccc; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+    background-color:#0f1d29;
+}
+
+body.dark-mode .nav-link {
+    color: #cccccc; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+    
+}
+
+body.dark-mode .btn-orangered {
+    background-color: rgba(238, 81, 66, 0.5);
+    
+}
+
+body.dark-mode .navbar-brand {
+    color: #cccccc; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+    
+}
+
+body.dark-mode .logo {
+    color: #cccccc; /* เปลี่ยนสีตัวหนังสือในโหมดแสงสว่าง */
+}

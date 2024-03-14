@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+
+    position: relative;
+    margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dots {
+    position: relative;
+    top: -3.5rem;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+
+#autoSlideButton {
+    cursor: pointer;
+    position: relative;
+    right: -1em;
+    top: -5em;
+    color: white;
+
+}
+
+#autoSlideButton:hover {
+    color: Gray;
+}
+
+.btn-orangered {
+    background-color: orangered;
+    color: white;
+}
+
+.btn-orangered:hover {
+    background-color: #ff7f50;
+    /* Lighter shade of orange */
+}
+
+.btn-orangered:active {
+    background-color: white;
+    /* Change to white when clicked */
+    color: black;
+    /* Change text color to black when clicked */
+}
+
+/* #carouselExampleDark img {
+            height: 500px;
+            /* ปรับความสูงตามที่ต้องการ */
+/* object-fit: contain; */
+/* ปรับขนาดภาพให้เต็มพื้นที่ */
+/* } */
+
+.my-text {
+    transition: transform 0.3s ease;
+    /* เพิ่มการเปลี่ยนแปลงอย่างนุ่มนวล */
+}
+
+.my-text:hover {
+    transform: translateY(-5px);
+    /* เลื่อนข้อความขึ้นข้างบนเมื่อโดนเม้าส์ */
+}
+
+.text-animate {
+    visibility: hidden;
+
+}
+
+.custom-toggle {
+    font-size: 0.8rem;
+    /* ปรับขนาด font-size ให้เล็กลง */
+    padding: 0.25rem 0.5rem;
+    /* ปรับ padding ให้มีขนาดเล็กลง */
+}
+
+/* @font-face {
+            font-family: "IBMPlexSansThai";
+            
+            src: url('font/IBMPlexSansThai-Light.ttf') format('truetype');
+            
+
+        }
+
+        @font-face {
+
+            font-family: "MadimiOne-Regular";
+            
+            src: url('font/Madi') format('truetype');
+            
+        } */
+
+
+body {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body[lang="th"] {
+    font-family: "IBMPlexSansThai", Tahoma, sans-serif;
+
+}
